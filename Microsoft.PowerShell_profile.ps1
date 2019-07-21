@@ -1,0 +1,1 @@
+Set-PSReadlineOption -TokenKind command -ForegroundColor DarkYellow
