@@ -1,5 +1,4 @@
 # Video
----
 Color Mode: `Computer Monitor`  
 Brightness: `130%`  
 Resolution: `Your Preference`  
@@ -7,7 +6,6 @@ Display Mode: `Fullscreen`
 Laptop Power Savings: `Disabled`  
 
 # Advanced Video
----
 Global Shadow Quality: `High`  
 Model / Texture Detail: `Medium`  
 Effect Detail: `Medium`  
