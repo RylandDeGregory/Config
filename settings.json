@@ -1,0 +1,67 @@
+{
+    //SETTINGS CHANGES
+    //workbench
+    "workbench.settings.editor": "json",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.enableExperiments": false,
+    "workbench.octiconsUpdate.enabled": true,
+    "workbench.tips.enabled": false,
+    "workbench.editor.highlightModifiedTabs": true,
+    //editor
+    "editor.quickSuggestionsDelay": 1,
+    "editor.tabCompletion": "on",
+    "editor.parameterHints.enabled": false,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "editor.accessibilitySupport": "off",
+    "editor.copyWithSyntaxHighlighting": false,
+    //window
+    "window.zoomLevel": 0,
+    "editor.fontSize": 12,
+    //files
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "files.defaultLanguage": "powershell",
+    //icons & themes & colors
+    "material-icon-theme.showWelcomeMessage": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "One Dark Pro",
+    //TERMINAL
+    "terminal.integrated.scrollback": 8000,
+    //LANGUAGE SPECIFIC CHANGES
+    //Git
+    "git.enableSmartCommit": true,
+    //PowerShell
+    "powershell.startAutomatically": true,
+    "powershell.scriptAnalysis.enable": true,
+    "powershell.integratedConsole.showOnStartup": false,
+    "powershell.integratedConsole.focusConsoleOnExecute": false,
+    "powershell.codeFormatting.preset": "Stroustrup",
+    "powershell.codeFormatting.useCorrectCasing": true,
+    "powershell.developer.editorServicesLogLevel": "Normal",
+    "powershell.developer.featureFlags": [
+        "PSReadLine"
+    ],
+    //YAML
+    "yaml.customTags": [
+        "!And",
+        "!If",
+        "!Not",
+        "!Equals sequence",
+        "!Or",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!Select sequence",
+        "!Split",
+        "!Join sequence"
+    ],
+    //TELEMETRY
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+}
