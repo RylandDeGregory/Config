@@ -9,7 +9,7 @@
     "workbench.editor.highlightModifiedTabs": true,
     //editor
     "editor.quickSuggestionsDelay": 1,
-    "editor.tabCompletion": "on",
+    "editor.tabCompletion": "off",
     "editor.parameterHints.enabled": false,
     "editor.minimap.enabled": false,
     "breadcrumbs.enabled": false,
@@ -25,7 +25,7 @@
     //icons & themes & colors
     "material-icon-theme.showWelcomeMessage": false,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "Material Theme Palenight",
     //TERMINAL
     "terminal.integrated.scrollback": 8000,
     //LANGUAGE SPECIFIC CHANGES
@@ -61,6 +61,12 @@
         "!Split",
         "!Join sequence"
     ],
+    "terraform.languageServer": {
+        "enabled": true
+    },
+    "terraform.indexing": {
+        "enabled": false,
+    },
     //TELEMETRY
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
