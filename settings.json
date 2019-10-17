@@ -25,7 +25,7 @@
     //icons & themes & colors
     "material-icon-theme.showWelcomeMessage": false,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Material Theme Palenight",
+    "workbench.colorTheme": "Nord",
     //TERMINAL
     "terminal.integrated.scrollback": 8000,
     //LANGUAGE SPECIFIC CHANGES
@@ -71,4 +71,6 @@
     //TELEMETRY
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
+    "team.showWelcomeMessage": false,
+    "workbench.editor.showTabs": false,
 }
