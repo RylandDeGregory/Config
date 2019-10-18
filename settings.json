@@ -3,8 +3,7 @@
     //workbench
     "workbench.settings.editor": "json",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.enableExperiments": false,
-    "workbench.octiconsUpdate.enabled": true,
+    "workbench.enableExperiments": false
     "workbench.tips.enabled": false,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.showTabs": true,
@@ -72,6 +71,5 @@
     //TELEMETRY
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "team.showWelcomeMessage": false,
-    "workbench.editor.showTabs": false,
+    "team.showWelcomeMessage": false
 }
