@@ -2,35 +2,51 @@
     //SETTINGS CHANGES
     //workbench
     "workbench.settings.editor": "json",
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.enableExperiments": false
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.enableExperiments": false,
     "workbench.tips.enabled": false,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.showTabs": true,
+
     //editor
     "editor.quickSuggestionsDelay": 1,
     "editor.tabCompletion": "off",
     "editor.parameterHints.enabled": false,
     "editor.minimap.enabled": false,
-    "breadcrumbs.enabled": false,
+    "editor.scrollBeyondLastLine": false,
+    "breadcrumbs.enabled": false,
+    "editor.renderWhitespace": "selection",
     "editor.accessibilitySupport": "off",
     "editor.copyWithSyntaxHighlighting": false,
+
+    //fonts
+    //"editor.fontFamily": "Fira Code",
+    "editor.fontFamily": "Cascadia Code",
+    "editor.fontLigatures": true,
+
     //window
     "window.zoomLevel": 0,
-    "editor.fontSize": 12,
+    "editor.fontSize": 13.5,
+
     //files
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
     "files.defaultLanguage": "powershell",
+
     //icons & themes & colors
     "material-icon-theme.showWelcomeMessage": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Nord",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Nord",
+    "extensions.showRecommendationsOnlyOnDemand": true,
+
     //TERMINAL
     "terminal.integrated.scrollback": 8000,
+    "terminal.integrated.fontFamily": "Cascadia Code",
+
     //LANGUAGE SPECIFIC CHANGES
     //Git
     "git.enableSmartCommit": true,
+
     //PowerShell
     "powershell.startAutomatically": true,
     "powershell.scriptAnalysis.enable": true,
@@ -42,25 +58,7 @@
     "powershell.developer.featureFlags": [
         "PSReadLine"
     ],
-    //YAML
-    "yaml.customTags": [
-        "!And",
-        "!If",
-        "!Not",
-        "!Equals sequence",
-        "!Or",
-        "!FindInMap sequence",
-        "!Base64",
-        "!Cidr",
-        "!Ref",
-        "!Sub",
-        "!GetAtt",
-        "!GetAZs",
-        "!ImportValue",
-        "!Select sequence",
-        "!Split",
-        "!Join sequence"
-    ],
+
     //Terraform
     "terraform.languageServer": {
         "enabled": true
@@ -68,8 +66,9 @@
     "terraform.indexing": {
         "enabled": false,
     },
+
     //TELEMETRY
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "team.showWelcomeMessage": false
+    "team.showWelcomeMessage": false,
 }
