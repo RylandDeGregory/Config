@@ -1,5 +1,9 @@
 {
     //SETTINGS CHANGES
+    //general
+    "extensions.showRecommendationsOnlyOnDemand": true,
+    "explorer.openEditors.visible": 5,
+
     //workbench
     "workbench.settings.editor": "json",
     "workbench.startupEditor": "newUntitledFile",
@@ -7,21 +11,25 @@
     "workbench.tips.enabled": false,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.showTabs": true,
+    "workbench.tree.indent": 10,
+    "workbench.tree.renderIndentGuides": "onHover",
+    "workbench.sideBar.location": "left",
 
     //editor
+    "breadcrumbs.enabled": false,
     "editor.quickSuggestionsDelay": 1,
     "editor.tabCompletion": "off",
     "editor.parameterHints.enabled": false,
     "editor.minimap.enabled": false,
     "editor.scrollBeyondLastLine": false,
-    "breadcrumbs.enabled": false,
     "editor.renderWhitespace": "selection",
+    "editor.renderIndentGuides": true,
     "editor.accessibilitySupport": "off",
     "editor.copyWithSyntaxHighlighting": false,
+    "editor.suggestSelection": "first",
 
     //fonts
-    //"editor.fontFamily": "Fira Code",
-    "editor.fontFamily": "Cascadia Code",
+    "editor.fontFamily": "Cascadia Code", //"Fira Code",
     "editor.fontLigatures": true,
 
     //window
@@ -37,7 +45,6 @@
     "material-icon-theme.showWelcomeMessage": false,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Nord",
-    "extensions.showRecommendationsOnlyOnDemand": true,
 
     //TERMINAL
     "terminal.integrated.scrollback": 8000,
@@ -58,6 +65,17 @@
     "powershell.developer.featureFlags": [
         "PSReadLine"
     ],
+
+    //Markdown
+    "[markdown]": {
+        "editor.quickSuggestions": false,
+        "editor.minimap.enabled": false
+    },
+
+    //JSON
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
 
     //Terraform
     "terraform.languageServer": {
