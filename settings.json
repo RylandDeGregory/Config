@@ -29,12 +29,15 @@
     "editor.suggestSelection": "first",
 
     //fonts
-    "editor.fontFamily": "Cascadia Code", //"Fira Code",
+    "editor.fontFamily": "Cascadia Code", //"Source Code Pro", //"Fira Code",
     "editor.fontLigatures": true,
+    "editor.fontSize": 13,
+    "editor.fontWeight": "normal",
 
     //window
     "window.zoomLevel": 0,
-    "editor.fontSize": 13.5,
+    "window.title": "${activeEditorShort}${separator}${rootName}",
+    "window.openFoldersInNewWindow": "on",
 
     //files
     "files.trimTrailingWhitespace": true,
@@ -53,14 +56,17 @@
     //LANGUAGE SPECIFIC CHANGES
     //Git
     "git.enableSmartCommit": true,
+    "gitlens.currentLine.enabled": false,
 
     //PowerShell
     "powershell.startAutomatically": true,
     "powershell.scriptAnalysis.enable": true,
     "powershell.integratedConsole.showOnStartup": false,
     "powershell.integratedConsole.focusConsoleOnExecute": false,
-    "powershell.codeFormatting.preset": "Stroustrup",
+    "powershell.codeFormatting.preset": "OTBS",
     "powershell.codeFormatting.useCorrectCasing": true,
+    "powershell.codeFormatting.autoCorrectAliases": true,
+    "powershell.codeFormatting.pipelineIndentationStyle": "IncreaseIndentationAfterEveryPipeline",
     "powershell.developer.editorServicesLogLevel": "Normal",
     "powershell.developer.featureFlags": [
         "PSReadLine"
