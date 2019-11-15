@@ -12,7 +12,7 @@ module.exports = {
     fontSize: 14,
 
     // font family with optional fallbacks
-    fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: 'Source Code Pro',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
@@ -135,7 +135,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyper-chesterish"],
+  plugins: ['nord-hyper'],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
