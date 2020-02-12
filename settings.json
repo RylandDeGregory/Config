@@ -27,6 +27,7 @@
     "editor.accessibilitySupport": "off",
     "editor.copyWithSyntaxHighlighting": false,
     "editor.suggestSelection": "first",
+    "workbench.editor.limit.enabled": true,
 
     //fonts
     "editor.fontFamily": "Cascadia Code", //"Source Code Pro", //"Fira Code",
