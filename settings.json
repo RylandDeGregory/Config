@@ -43,7 +43,7 @@
     //files
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
-    "files.defaultLanguage": "powershell",
+    "files.defaultLanguage": "{activeEditorLanguage}",
 
     //icons & themes & colors
     "material-icon-theme.showWelcomeMessage": false,
