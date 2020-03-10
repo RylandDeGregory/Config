@@ -28,9 +28,10 @@
     "editor.copyWithSyntaxHighlighting": false,
     "editor.suggestSelection": "first",
     "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.value": 10,
 
     //fonts
-    "editor.fontFamily": "Cascadia Code", //"Source Code Pro", //"Fira Code",
+    "editor.fontFamily": "Cascadia Code", //"Fira Code", //"Source Code Pro",
     "editor.fontLigatures": true,
     "editor.fontSize": 13,
     "editor.fontWeight": "normal",
@@ -52,7 +53,7 @@
 
     //TERMINAL
     "terminal.integrated.scrollback": 8000,
-    "terminal.integrated.fontFamily": "Cascadia Code",
+    "terminal.integrated.fontFamily": "Fira Code",
 
     //LANGUAGE SPECIFIC CHANGES
     //Git
@@ -62,7 +63,7 @@
     //PowerShell
     "powershell.startAutomatically": true,
     "powershell.scriptAnalysis.enable": true,
-    "powershell.integratedConsole.showOnStartup": false,
+    "powershell.integratedConsole.showOnStartup": true,
     "powershell.integratedConsole.focusConsoleOnExecute": false,
     "powershell.codeFormatting.preset": "OTBS",
     "powershell.codeFormatting.useCorrectCasing": true,
@@ -96,4 +97,6 @@
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "team.showWelcomeMessage": false,
+    "powershell.promptToUpdatePowerShell": false,
+    "terminal.integrated.shell.osx": "/bin/zsh",
 }
