@@ -22,10 +22,10 @@
     "editor.parameterHints.enabled": false,
     "editor.minimap.enabled": false,
     "editor.scrollBeyondLastLine": false,
-    "editor.renderWhitespace": "selection",
+    "editor.renderWhitespace": "boundary",
     "editor.renderIndentGuides": true,
     "editor.accessibilitySupport": "off",
-    "editor.copyWithSyntaxHighlighting": false,
+    "editor.copyWithSyntaxHighlighting": true,
     "editor.suggestSelection": "first",
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.value": 10,
@@ -47,9 +47,9 @@
     "files.defaultLanguage": "{activeEditorLanguage}",
 
     //icons & themes & colors
+    "workbench.colorTheme": "Nord",
     "material-icon-theme.showWelcomeMessage": false,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Nord",
 
     //TERMINAL
     "terminal.integrated.scrollback": 8000,
@@ -80,6 +80,13 @@
         "editor.minimap.enabled": false
     },
 
+    "markdownlint.config": {
+        "default": true,
+        "MD025": false,
+        "MD007": { "indent": 4 },
+        "no-hard-tabs": false
+    },
+
     //JSON
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
@@ -99,4 +106,16 @@
     "team.showWelcomeMessage": false,
     "powershell.promptToUpdatePowerShell": false,
     "terminal.integrated.shell.osx": "/bin/zsh",
+    "git.confirmSync": false,
+    "cSpell.userWords": [
+        "ansible",
+        "browsable",
+        "hashicorp",
+        "kerberos",
+        "kubernetes",
+        "mware",
+        "postgresql",
+        "svccor"
+    ],
+    "diffEditor.ignoreTrimWhitespace": true,
 }
