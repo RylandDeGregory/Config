@@ -1,0 +1,10 @@
+exclude_paths:
+  - awx/templates/
+  - awx/inventories/
+skip_list:
+  - '204'
+  - '301'
+  - '306'
+  - '502'
+use_default_rules: true
+verbosity: 1
