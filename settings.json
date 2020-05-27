@@ -75,7 +75,7 @@
     "powershell.codeFormatting.autoCorrectAliases": true,
     "powershell.codeFormatting.pipelineIndentationStyle": "IncreaseIndentationAfterEveryPipeline",
     "powershell.developer.editorServicesLogLevel": "Normal",
-    "powershell.scriptAnalysis.settingsPath": "/users/100043547/.PSScriptAnalyzerSettings.psd1",
+    "powershell.scriptAnalysis.settingsPath": "/users/<username>/.PSScriptAnalyzerSettings.psd1",
     "powershell.developer.featureFlags": [
         "PSReadLine"
     ],
