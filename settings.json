@@ -3,6 +3,9 @@
     //general
     "extensions.showRecommendationsOnlyOnDemand": true,
     "explorer.openEditors.visible": 5,
+    "team.showWelcomeMessage": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
 
     //workbench
     "workbench.settings.editor": "json",
@@ -27,6 +30,7 @@
     "editor.accessibilitySupport": "off",
     "editor.copyWithSyntaxHighlighting": true,
     "editor.suggestSelection": "first",
+    "diffEditor.ignoreTrimWhitespace": true,
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.value": 10,
 
@@ -45,23 +49,24 @@
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
     "files.defaultLanguage": "{activeEditorLanguage}",
-
-    //icons & themes & colors
-    "workbench.colorTheme": "Nord",
     "material-icon-theme.showWelcomeMessage": false,
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Nordico",
 
-    //TERMINAL
+    //terminal
+    "terminal.integrated.shell.osx": "/bin/zsh",
     "terminal.integrated.scrollback": 8000,
     "terminal.integrated.fontFamily": "Fira Code",
 
-    //LANGUAGE SPECIFIC CHANGES
-    //Git
+    //git
     "git.enableSmartCommit": true,
+    "git.confirmSync": false,
     "gitlens.currentLine.enabled": false,
 
+    //LANGUAGE SPECIFIC CHANGES
     //PowerShell
     "powershell.startAutomatically": true,
+    "powershell.promptToUpdatePowerShell": false,
     "powershell.scriptAnalysis.enable": true,
     "powershell.integratedConsole.showOnStartup": true,
     "powershell.integratedConsole.focusConsoleOnExecute": false,
@@ -70,6 +75,7 @@
     "powershell.codeFormatting.autoCorrectAliases": true,
     "powershell.codeFormatting.pipelineIndentationStyle": "IncreaseIndentationAfterEveryPipeline",
     "powershell.developer.editorServicesLogLevel": "Normal",
+    "powershell.scriptAnalysis.settingsPath": "/users/100043547/.PSScriptAnalyzerSettings.psd1",
     "powershell.developer.featureFlags": [
         "PSReadLine"
     ],
@@ -79,12 +85,11 @@
         "editor.quickSuggestions": false,
         "editor.minimap.enabled": false
     },
-
     "markdownlint.config": {
         "default": true,
         "MD025": false,
         "MD007": { "indent": 4 },
-        "no-hard-tabs": false
+        "no-hard-tabs": true
     },
 
     //JSON
@@ -100,22 +105,38 @@
         "enabled": false,
     },
 
-    //TELEMETRY
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
-    "team.showWelcomeMessage": false,
-    "powershell.promptToUpdatePowerShell": false,
-    "terminal.integrated.shell.osx": "/bin/zsh",
-    "git.confirmSync": false,
+    //Code Spelling
     "cSpell.userWords": [
         "ansible",
         "browsable",
         "hashicorp",
         "kerberos",
+        "keyvault",
         "kubernetes",
-        "mware",
+        "ldap",
+        "vmware",
         "postgresql",
         "svccor"
     ],
-    "diffEditor.ignoreTrimWhitespace": true,
+    "cSpell.enableFiletypes": [
+        "!cpp",
+        "!csharp",
+        "!handlebars",
+        "!haskell",
+        "!jade",
+        "!java",
+        "!latex",
+        "!php",
+        "!pug",
+        "!rust",
+        "!scala",
+        "!yaml",
+        "!yml",
+        "dockerfile",
+        "ini",
+        "jinja",
+        "properties",
+        "sql",
+        "xml"
+    ],
 }
