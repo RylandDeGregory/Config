@@ -30,7 +30,7 @@
     "editor.accessibilitySupport": "off",
     "editor.copyWithSyntaxHighlighting": true,
     "editor.suggestSelection": "first",
-    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.ignoreTrimWhitespace": false,
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.value": 10,
 
@@ -75,7 +75,7 @@
     "powershell.codeFormatting.autoCorrectAliases": true,
     "powershell.codeFormatting.pipelineIndentationStyle": "IncreaseIndentationAfterEveryPipeline",
     "powershell.developer.editorServicesLogLevel": "Normal",
-    "powershell.scriptAnalysis.settingsPath": "/users/<username>/.PSScriptAnalyzerSettings.psd1",
+    "powershell.scriptAnalysis.settingsPath": "/users/100043547/.PSScriptAnalyzerSettings.psd1",
     "powershell.developer.featureFlags": [
         "PSReadLine"
     ],
@@ -89,7 +89,8 @@
         "default": true,
         "MD025": false,
         "MD007": { "indent": 4 },
-        "no-hard-tabs": true
+        "no-hard-tabs": false,
+        "MD047": false
     },
 
     //JSON
@@ -99,7 +100,10 @@
 
     //Terraform
     "terraform.languageServer": {
-        "enabled": true
+        "external": true,
+        "args": [
+            "serve"
+        ]
     },
     "terraform.indexing": {
         "enabled": false,
@@ -109,14 +113,19 @@
     "cSpell.userWords": [
         "ansible",
         "browsable",
+        "chmod",
         "hashicorp",
+        "jobtemplate",
+        "jobtemplate spec",
         "kerberos",
         "keyvault",
         "kubernetes",
         "ldap",
-        "vmware",
         "postgresql",
-        "svccor"
+        "repos",
+        "spec",
+        "svccor",
+        "vmware"
     ],
     "cSpell.enableFiletypes": [
         "!cpp",
