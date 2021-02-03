@@ -1,96 +1,127 @@
 {
     //SETTINGS CHANGES
     //general
-    "extensions.showRecommendationsOnlyOnDemand": true,
     "explorer.openEditors.visible": 5,
-    "team.showWelcomeMessage": false,
+    "extensions.ignoreRecommendations": true,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
 
     //workbench
-    "workbench.settings.editor": "json",
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.enableExperiments": false,
-    "workbench.tips.enabled": false,
+    "workbench.colorTheme": "Nord",
     "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.value": 10,
     "workbench.editor.showTabs": true,
-    "workbench.tree.indent": 10,
-    "workbench.tree.renderIndentGuides": "onHover",
+    "workbench.enableExperiments": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.settings.editor": "json",
     "workbench.sideBar.location": "left",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.tips.enabled": false,
+    "workbench.tree.indent": 4,
+    "workbench.tree.renderIndentGuides": "onHover",
+    "workbench.colorCustomizations": {
+        "[Nord]": {
+          "activityBarBadge.background": "#81a1c1",
+          "activityBarBadge.foreground": "#eceff4"
+        }
+      },
 
     //editor
     "breadcrumbs.enabled": false,
-    "editor.quickSuggestionsDelay": 1,
-    "editor.tabCompletion": "off",
-    "editor.parameterHints.enabled": false,
-    "editor.minimap.enabled": false,
-    "editor.scrollBeyondLastLine": false,
-    "editor.renderWhitespace": "boundary",
-    "editor.renderIndentGuides": true,
+    "diffEditor.ignoreTrimWhitespace": false,
     "editor.accessibilitySupport": "off",
     "editor.copyWithSyntaxHighlighting": true,
-    "editor.suggestSelection": "first",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "workbench.editor.limit.enabled": true,
-    "workbench.editor.limit.value": 10,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.minimap.enabled": false,
+    "editor.parameterHints.enabled": false,
+    "editor.quickSuggestionsDelay": 1,
+    "editor.renderIndentGuides": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.scrollBeyondLastLine": false,
+    "editor.snippetSuggestions": "none",
     "editor.suggest.showSnippets": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "off",
+    "editor.tokenColorCustomizations": {
+        "[Nord]": {
+            "textMateRules": [
+            {
+                "scope": ["comment"],
+                "settings": {
+                    "fontStyle": "italic",
+                    "foreground":"#7b88a1"
+                }
+            },
+            {
+                "scope": ["variable.parameter"],
+                "settings": {
+                    "foreground": "#EBCB8B",
+                }
+            }
+            ]
+        }
+    },
 
-    //fonts
-    "editor.fontFamily": "Cascadia Code", //"Fira Code", //"Source Code Pro",
+    //font
+    "editor.fontFamily": "JetBrains Mono",
     "editor.fontLigatures": true,
     "editor.fontSize": 13,
     "editor.fontWeight": "normal",
+    "editor.lineHeight": 0,
 
     //window
-    "window.zoomLevel": 0,
-    "window.title": "${activeEditorShort}${separator}${rootName}",
     "window.openFoldersInNewWindow": "on",
+    "window.title": "${activeEditorShort}${separator}${rootName}",
+    "window.zoomLevel": 0,
 
     //files
-    "files.trimTrailingWhitespace": true,
-    "files.trimFinalNewlines": true,
     "files.defaultLanguage": "{activeEditorLanguage}",
-    "material-icon-theme.showWelcomeMessage": false,
-    "workbench.iconTheme": "material-icon-theme",
+    "files.eol": "\n",
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
 
-    //terminal
-    "terminal.integrated.shell.osx": "/bin/zsh",
+    //integrated terminal
+    "terminal.explorerKind": "external",
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.fontFamily": "Fira Mono for Powerline",
     "terminal.integrated.scrollback": 8000,
-    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.shell.osx": "/usr/local/bin/pwsh",
 
     //git
-    "git.enableSmartCommit": true,
+    "git.autofetch": true,
     "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "git.fetchOnPull": true,
+    "git.pruneOnFetch": true,
+    "scm.autoReveal": false,
+    "scm.countBadge": "focused",
+    "scm.defaultViewMode": "tree",
 
     //LANGUAGE SPECIFIC CHANGES
     //PowerShell
-    "powershell.startAutomatically": true,
-    "powershell.promptToUpdatePowerShell": false,
-    "powershell.scriptAnalysis.enable": true,
-    "powershell.integratedConsole.showOnStartup": true,
-    "powershell.integratedConsole.focusConsoleOnExecute": false,
+    "powershell.codeFormatting.addWhitespaceAroundPipe": true,
+    "powershell.codeFormatting.autoCorrectAliases": true,
+    "powershell.codeFormatting.pipelineIndentationStyle": "IncreaseIndentationAfterEveryPipeline",
     "powershell.codeFormatting.preset": "OTBS",
     "powershell.codeFormatting.useCorrectCasing": true,
-    "powershell.codeFormatting.autoCorrectAliases": true,
-    "powershell.codeFormatting.addWhitespaceAroundPipe": true,
-    "powershell.codeFormatting.pipelineIndentationStyle": "IncreaseIndentationAfterEveryPipeline",
     "powershell.developer.editorServicesLogLevel": "Normal",
-    "powershell.scriptAnalysis.settingsPath": "/users/<username>/.PSScriptAnalyzerSettings.psd1",
+    "powershell.enableProfileLoading": false,
+    "powershell.integratedConsole.focusConsoleOnExecute": false,
+    "powershell.integratedConsole.showOnStartup": false,
+    "powershell.promptToUpdatePowerShell": false,
+    "powershell.scriptAnalysis.enable": true,
+    "powershell.scriptAnalysis.settingsPath": "./PSScriptAnalyzerSettings.psd1",
+    "powershell.startAutomatically": true,
     "powershell.developer.featureFlags": [
         "PSReadLine"
     ],
 
     //Markdown
     "[markdown]": {
-        "editor.quickSuggestions": false,
-        "editor.minimap.enabled": false
-    },
-    "markdownlint.config": {
-        "default": true,
-        "MD025": false,
-        "MD007": { "indent": 4 },
-        "no-hard-tabs": true,
-        "MD047": false
+        "editor.minimap.enabled": false,
+        "editor.quickSuggestions": false
     },
 
     //JSON
@@ -105,38 +136,55 @@
             "serve"
         ]
     },
-    "terraform.indexing": {
-        "enabled": false,
-    },
 
+    // EXTENSION SPECIFIC CHANGES
     //Code Spelling
     "cSpell.userWords": [
         "Datacenter",
         "Runbook",
+        "ad",
         "ansible",
         "automox",
         "autopower",
         "browsable",
         "chmod",
         "datetime",
+        "deprovisioning",
+        "empty",
         "endfunction",
         "endregion",
+        "group",
         "hashicorp",
-        "ho",
         "hostnames",
-        "jobtemplate",
+        "inbound",
+        "int",
+        "ipam",
+        "isu",
         "jobtemplate spec",
+        "jobtemplate",
         "kerberos",
         "keyvault",
         "kubernetes",
         "ldap",
+        "not",
         "notcontains",
+        "notin",
         "notlike",
+        "notmatch",
+        "nullor",
+        "okta",
         "postgresql",
+        "rbac",
         "repos",
+        "ryland",
+        "scom",
+        "smtp",
         "spec",
         "svccor",
-        "vmware"
+        "validate not nullor empty",
+        "validate",
+        "vmware",
+        "wd"
     ],
     "cSpell.enableFiletypes": [
         "!cpp",
@@ -161,11 +209,20 @@
         "terraform",
         "xml"
     ],
-    "terminal.explorerKind": "external",
-    "terminal.external.osxExec": "iTerm.app",
-    "gitlens.mode.statusBar.enabled": false,
-    "gitlens.hovers.currentLine.over": "line",
+
+    //Markdownlint
+    "markdownlint.config": {
+        "default": true,
+        "no-hard-tabs": true,
+        "MD007": { "indent": 4 },
+        "MD025": false,
+        "MD047": false
+    },
+
+    //GitLens
     "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.mode.statusBar.enabled": false,
     "gitlens.codeLens.scopes": [
         "document"
     ],
@@ -202,5 +259,25 @@
             "stash": true
         }
     },
-    "workbench.colorTheme": "GitHub Dark",
+
+    //Material Icons
+    "material-icon-theme.files.associations": {
+        ".ansible-lint": "settings",
+        ".yamllint": "settings",
+        "AWX_Build-Dev.yml": "azure-pipelines",
+        "AWX_Build.yml": "azure-pipelines",
+        "AWX_Install.yml": "azure-pipelines",
+        "AWX_Update.yml": "azure-pipelines",
+        "azure-pipelines_ci.yml": "azure-pipelines",
+        "azure-pipelines_prd.yml": "azure-pipelines",
+        "inventory": "settings",
+    },
+    "material-icon-theme.folders.associations": {
+        "azure-pipelines": "azure-pipelines",
+        "defaults": "constant",
+        "files": "log",
+        "roles": "ci",
+        "vars": "functions",
+    },
+    "material-icon-theme.showWelcomeMessage": false,
 }
