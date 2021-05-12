@@ -1,8 +1,8 @@
 {
     "final_space": false,
-    "console_title": false,
-    "console_title_style": "",
-    "console_title_template": "",
+    "console_title": true,
+    "console_title_style": "folder",
+    "terminal_background": "#2e3340",
     "blocks": [
         {
             "type": "prompt",
@@ -10,17 +10,6 @@
             "horizontal_offset": 0,
             "vertical_offset": 0,
             "segments": [
-                {
-                    "type": "root",
-                    "style": "powerline",
-                    "powerline_symbol": "",
-                    "invert_powerline": false,
-                    "foreground": "#100e23",
-                    "background": "#ffe9aa",
-                    "leading_diamond": "",
-                    "trailing_diamond": "",
-                    "properties": null
-                },
                 {
                     "type": "path",
                     "style": "powerline",
@@ -46,7 +35,15 @@
                     "leading_diamond": "",
                     "trailing_diamond": "",
                     "properties": null
-                },
+                }
+            ]
+        },
+        {
+            "type": "prompt",
+            "alignment": "right",
+            "horizontal_offset": 0,
+            "vertical_offset": 0,
+            "segments": [
                 {
                     "type": "exit",
                     "style": "powerline",
@@ -59,19 +56,11 @@
                     "properties": {
                         "prefix": " 🚫 "
                     }
-                }
-            ]
-        },
-        {
-            "type": "prompt",
-            "alignment": "right",
-            "horizontal_offset": 0,
-            "vertical_offset": 0,
-            "segments": [
+                },
                 {
                     "type": "executiontime",
                     "style": "powerline",
-                    "powerline_symbol": "\uE0B0",
+                    "powerline_symbol": "",
                     "foreground": "#ffffff",
                     "background": "#88c0d0",
                     "properties": {
