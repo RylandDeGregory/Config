@@ -28,6 +28,7 @@ function New-Base64String {
     return [System.Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes($Text))
 }
 New-Alias -Name 'ToBase64' -Value New-Base64String
+
 function New-StringFromBase64 {
     param (
         [Parameter(Mandatory, ValueFromPipeline, Position = 0)]
