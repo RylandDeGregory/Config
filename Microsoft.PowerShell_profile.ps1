@@ -9,8 +9,15 @@ Set-PSReadLineOption -HistorySearchCursorMovesToEnd
 Set-PSReadlineKeyHandler -Key Tab -Function Complete
 Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
-Set-PSReadLineKeyHandler -Key Ctrl+UpArrow -Function PreviousSuggestion
-Set-PSReadLineKeyHandler -Key Ctrl+DownArrow -Function NextSuggestion
+
+if ($IsMacOS) {
+    Set-PSReadLineKeyHandler -Key Ctrl+Shift+UpArrow -Function PreviousSuggestion
+    Set-PSReadLineKeyHandler -Key Ctrl+Shift+DownArrow -Function NextSuggestion
+} else {
+    Set-PSReadLineKeyHandler -Key Ctrl+UpArrow -Function PreviousSuggestion
+    Set-PSReadLineKeyHandler -Key Ctrl+DownArrow -Function NextSuggestion
+}
+
 
 function New-Base64String {
     param (
@@ -35,4 +42,12 @@ function Resolve-IP {
         [IPAddress] $IPAddress
     )
     return [System.Net.Dns]::GetHostByAddress("$($IPAddress.IPAddressToString)").HostName
+}
+
+function Resolve-HostName {
+    param (
+        [Parameter(Mandatory, ValueFromPipeline, Position = 0)]
+        [string] $HostName
+    )
+    return [System.Net.Dns]::GetHostAddresses($HostName).IPAddressToString
 }
