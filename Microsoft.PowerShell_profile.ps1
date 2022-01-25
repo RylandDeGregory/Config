@@ -19,7 +19,6 @@ if ($IsMacOS) {
     Set-PSReadLineKeyHandler -Key Ctrl+DownArrow -Function NextSuggestion
 }
 
-
 function New-Base64String {
     param (
         [Parameter(Mandatory, ValueFromPipeline, Position = 0)]
