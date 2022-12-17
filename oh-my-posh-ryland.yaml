@@ -1,0 +1,74 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json
+
+$schema: https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json
+blocks:
+- alignment: left
+  segments:
+  - background: '#ffe9aa'
+    foreground: '#100e23'
+    powerline_symbol: 
+    style: powerline
+    type: root
+  - background: '#88c0d0'
+    foreground: '#100e23'
+    invert_powerline: false
+    leading_diamond: ""
+    powerline_symbol: 
+    properties:
+      folder_icon: "\U0001F4C1"
+      folder_separator_icon: /
+      style: full
+    style: powerline
+    trailing_diamond: ""
+    type: path
+  - background: '#a3b38c'
+    foreground: '#193549'
+    invert_powerline: false
+    leading_diamond: ""
+    powerline_symbol: 
+    properties: null
+    style: powerline
+    trailing_diamond: ""
+    type: git
+  type: prompt
+- alignment: right
+  segments:
+  - background: '#ff8080'
+    foreground: '#ffffff'
+    invert_powerline: false
+    leading_diamond: ""
+    powerline_symbol: 
+    properties:
+      prefix: " \U0001F6AB "
+    style: powerline
+    trailing_diamond: ""
+    type: exit
+  - background: '#88c0d0'
+    foreground: '#ffffff'
+    powerline_symbol: 
+    properties:
+      prefix: " \U0001F551 "
+      style: austin
+      threshold: 500
+    style: powerline
+    type: executiontime
+  type: prompt
+- alignment: ""
+  horizontal_offset: 0
+  segments: null
+  type: newline
+  vertical_offset: 0
+- alignment: left
+  horizontal_offset: 0
+  segments:
+  - foreground: '#007ACC'
+    invert_powerline: false
+    powerline_symbol: ""
+    properties:
+      prefix: ""
+      text: ❯
+    style: plain
+    type: text
+  type: prompt
+  vertical_offset: 0
+
