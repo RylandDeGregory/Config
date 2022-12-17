@@ -1,13 +1,17 @@
 #File location: /Users/<username>/.config/powershell/Microsoft.PowerShell_profile.ps1
 #requires -Version 7
-Set-PoshPrompt -Theme '~/.oh-my-posh-theme.omp.json'
+
+# Add Homebrew directories to PowerShell PATH
+$env:PATH += [IO.Path]::PathSeparator + '/opt/homebrew/bin:/opt/homebrew/sbin'
+
+oh-my-posh init pwsh --config 'https://raw.githubusercontent.com/RylandDeGregory/Config/master/oh-my-posh-ryland.json' | Invoke-Expression
 
 Set-PSReadLineOption -Colors @{ 'Command' = [ConsoleColor]::DarkYellow }
 Set-PSReadLineOption -PredictionSource HistoryAndPlugin
 Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -HistorySearchCursorMovesToEnd
 
-Set-PSReadlineKeyHandler -Key Tab -Function Complete
+Set-PSReadLineKeyHandler -Key Tab -Function Complete
 Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
