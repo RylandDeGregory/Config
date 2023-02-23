@@ -3,6 +3,7 @@
 - Azure Data Studio
 - Azure Functions Core Tools
 - Azure CLI
+- Azure Storage Explorer
 - Bicep CLI
 - Docker Desktop
 - Git
