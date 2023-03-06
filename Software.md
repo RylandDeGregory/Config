@@ -1,20 +1,20 @@
 # Required Software Installs
 
+- Azure CLI
 - Azure Data Studio
 - Azure Functions Core Tools
-- Azure CLI
 - Azure Storage Explorer
 - Bicep CLI
 - Docker Desktop
 - Git
-- VS Code
 - Node.js
 - PowerShell 7
     - Az
     - AzTable
     - MSGraph
-    - Posh-Git
     - PSScriptAnalyzer
+    - Posh-Git
 - PowerToys
 - ShareX
 - Spotify
+- VS Code
