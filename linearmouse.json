@@ -1,0 +1,54 @@
+{
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.7.7",
+  "schemes" : [
+    {
+      "pointer" : {
+        "acceleration" : 0,
+        "speed" : 0.35,
+        "disableAcceleration" : false
+      },
+      "if" : {
+        "device" : {
+          "productName" : "MX Master 3",
+          "serialNumber" : "39D153C223FDB413",
+          "productID" : "0xb023",
+          "category" : "mouse",
+          "vendorID" : "0x46d"
+        }
+      },
+      "scrolling" : {
+        "distance" : {
+          "vertical" : "auto"
+        }
+      }
+    },
+    {
+      "pointer" : {
+        "speed" : 0.4
+      },
+      "if" : {
+        "device" : {
+          "productName" : "USB Receiver",
+          "productID" : "0xc52b",
+          "category" : "mouse",
+          "vendorID" : "0x46d"
+        }
+      }
+    },
+    {
+      "pointer" : {
+        "acceleration" : 0.6875,
+        "speed" : 0.0689655172413792768,
+        "disableAcceleration" : false
+      },
+      "if" : {
+        "device" : {
+          "productName" : "Apple Internal Keyboard \/ Trackpad",
+          "productID" : "0x342",
+          "category" : "trackpad",
+          "vendorID" : "0x5ac"
+        }
+      }
+    }
+  ]
+}
