@@ -56,3 +56,49 @@ function Resolve-HostName {
     )
     return [System.Net.Dns]::GetHostAddresses($HostName).IPAddressToString
 }
+
+function Uninstall-OldModule {
+    param(
+        # Array of modules to uninstall
+        [Parameter(Mandatory)]
+        $Modules
+    )
+    foreach ($Module in $Modules) {
+        if ($Module.Count -gt 1) {
+            $LatestVersion = $Module.Group | Sort-Object Version | Select-Object Version -Last 1
+            Write-Output "Removing all versions of $($Module.Name) except latest installed: $($LatestVersion.Version)"
+            $Module.Group | Where-Object { $_.Version -ne $LatestVersion.Version } | ForEach-Object {
+                Write-Warning "Uninstalling $($_.Name) version $($_.Version)"
+                Uninstall-PSResource -Name $_.Name -Version $_.Version
+            }
+        } else {
+            Write-Output "One version of $($Module.Name) installed: $($Module.Group.Version)"
+        }
+    }
+}
+New-Alias -Name 'Uninstall-OldModules' -Value Uninstall-OldModule
+# $WinModules = Get-Module -ListAvailable Az* | Where-Object { $_.Path -like '*WindowsPowerShell*' } | Group-Object Name
+# $CoreModules = Get-Module -ListAvailable Az* | Where-Object { $_.Path -notlike '*WindowsPowerShell*' } | Group-Object Name
+
+function Delete-MultipleGitBranches {
+    [CmdletBinding()]
+    param (
+        [Parameter(Mandatory)]
+        [string] $BranchPattern
+    )
+    git branch | Where-Object { $_.Trim() -like $BranchPattern } | ForEach-Object { git branch -D $_.Trim() }
+}
+
+function Restart-AppService {
+    [CmdletBinding()]
+    param (
+        [Parameter(Mandatory)]
+        [string] $WebhookURL
+    )
+
+    $Username = $WebhookURL.Split('https://').Split(':')[1].Split('@')[0]
+    $Password = $WebhookURL.Split('https://').Split(':')[2].Split('@')[0]
+    $Headers  = @{ 'Authorization' = "Basic $([Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes("$Username`:$Password")))" }
+
+    Invoke-RestMethod -Method Post -Uri "https://$($WebhookURL.Split('@')[1])" -Headers $Headers -UserAgent 'powershell/1.0'
+}
