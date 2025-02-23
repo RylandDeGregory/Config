@@ -1,1 +1,1 @@
-srcds -game csgo -console -usercon +game_type 0 +game_mode 1 +mapgroup mg_active +map de_dust2 +sv_setsteamaccount 44E30C9D500DD5A7B91AF78CE1B88C28
+srcds -game csgo -console -usercon +game_type 0 +game_mode 1 +mapgroup mg_active +map de_dust2 +sv_setsteamaccount <STEAM DEV TOKEN>
